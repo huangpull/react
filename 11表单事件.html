@@ -31,10 +31,10 @@ class HelloMessage extends React.Component {
   }
   render() {
     var value = this.state.value;
-    return <div>
+    return (<div>
             <Content myDataProp = {value}
               updateStateProp = {this.handleChange}></Content>
-           </div>;
+           </div>);
   }
 }
 ReactDOM.render(
