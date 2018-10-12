@@ -11,6 +11,7 @@
 
 <div id="example"></div>
 <script type="text/babel">
+let style = {color:'red'};
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,7 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button onClick={this.handleClick} style={style}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button>
     );
