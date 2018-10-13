@@ -15,7 +15,7 @@
           return {value: 'Hello!'};
         },
         handleChange(event) {
-          this.setState({value: event.target.value}); {/*非表单数据this.state.xx*/}
+          this.setState({value: event.target.value}); {/*区别：非表单数据this.state.xx*/}
         },
         render () {
           var value = this.state.value;
